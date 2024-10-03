@@ -130,7 +130,7 @@ namespace Content.Shared.CCVar
         ///     Controls the duration of the lobby timer in seconds. Defaults to 2 minutes and 30 seconds.
         /// </summary>
         public static readonly CVarDef<int>
-            GameLobbyDuration = CVarDef.Create("game.lobbyduration", 150, CVar.ARCHIVE);
+            GameLobbyDuration = CVarDef.Create("game.lobbyduration", 200, CVar.ARCHIVE);
 
         /// <summary>
         ///     Controls if players can latejoin at all.
@@ -210,7 +210,7 @@ namespace Content.Shared.CCVar
         /// If roles should be restricted based on time.
         /// </summary>
         public static readonly CVarDef<bool>
-            GameRoleTimers = CVarDef.Create("game.role_timers", true, CVar.SERVER | CVar.REPLICATED);
+            GameRoleTimers = CVarDef.Create("game.role_timers", false, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         /// Override default role requirements using a <see cref="JobRequirementOverridePrototype"/>
@@ -240,7 +240,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("game.diagonalmovement", true, CVar.ARCHIVE);
 
         public static readonly CVarDef<int> SoftMaxPlayers =
-            CVarDef.Create("game.soft_max_players", 30, CVar.SERVERONLY | CVar.ARCHIVE);
+            CVarDef.Create("game.soft_max_players", 100, CVar.SERVERONLY | CVar.ARCHIVE);
 
         /// <summary>
         /// If a player gets denied connection to the server,
@@ -1687,10 +1687,10 @@ namespace Content.Shared.CCVar
             CVarDef.Create("viewport.minimum_width", 15, CVar.REPLICATED | CVar.SERVER);
 
         public static readonly CVarDef<int> ViewportMaximumWidth =
-            CVarDef.Create("viewport.maximum_width", 21, CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("viewport.maximum_width", 29, CVar.REPLICATED | CVar.SERVER);
 
         public static readonly CVarDef<int> ViewportWidth =
-            CVarDef.Create("viewport.width", 21, CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("viewport.width", 29, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         public static readonly CVarDef<bool> ViewportVerticalFit =
             CVarDef.Create("viewport.vertical_fit", true, CVar.CLIENTONLY | CVar.ARCHIVE);
