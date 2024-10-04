@@ -378,7 +378,7 @@ namespace Content.Shared.CCVar
         ///     Set to 0 or a negative number to disable.
         /// </summary>
         public static readonly CVarDef<int> RoundStartFailShutdownCount =
-            CVarDef.Create("game.round_start_fail_shutdown_count", 10, CVar.SERVERONLY | CVar.SERVER);
+            CVarDef.Create("game.round_start_fail_shutdown_count", 7, CVar.SERVERONLY | CVar.SERVER);
 #endif
 
         /// <summary>
